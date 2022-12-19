@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* 
+{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-style: sans-serif;
+}
+
+h1 
+{
+          text-align: center;
+          margin-top: 60px;
+          font-style: italic;
+          font-size: xx-large;
+          color: #010101;
+}
+
+body
+{
+          background-color: rgb(246, 133, 5);
+          background-color: #e7e1d8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+}
+.Container
+{
+          position: relative;
+          -webkit-box-reflect: below -20px linear -gradient(transparent, rgba(0,0,0,.2));
+          font-size: 60px;
+}
+.Container span
+{
+          font-family: "Alfa Slab One", cursive;
+          position: relative;
+          display: inline-block;
+          color: rgb(247, 126, 5);
+          text-transform: uppercase;
+          animation: wave 1s infinite;
+          animation-delay: calc(.1s * var(--i));
+}
+.container 
+{
+          max-width: 400px;
+          margin: 100px auto;
+          border: 3px solid rgb(241, 166, 4);
+          border-radius: 5px;
+          box-shadow: 4px 4px 8px #f4900580;
+}
+
+#display 
+{
+          text-align: center;
+          height: 80px;
+          color: rgb(0, 0, 0);
+          line-height: 50px;
+          padding: 15px 8px;
+          font-size: 40px;
+}
+
+.buttons 
+{
+          display: grid;
+          color: rgb(0, 0, 0);
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons>div 
+{
+          line-height: 80px;
+          text-align: center;
+          border: 2px solid rgb(246, 129, 3);
+          font-size: 30px;
+          cursor: pointer;
+}
+
+.button 
+{
+          line-height: 80px;
+          text-align: center;
+          font-size: 25px;
+          cursor: pointer;
+}
+
+#equal 
+{
+          background-color: rgba(241, 139, 5, 0.838);
+          font-size: 40px;
+          color: rgb(0, 0, 0);
+          font-weight: 800;
+}
+
+#equal:hover 
+{
+          background-color: rgb(247, 154, 4);
+          transition: 0.5s ease-in-out;
+}
+
+.button:hover 
+{
+          background-color: rgb(243, 120, 6);
+          color: rgb(0, 0, 0);
+          transition: 0.5s ease-in-out;
+}
+@keyframes wave
+{
+          0%,40%, 100%
+          {
+                    transform: translateY(0)
+          }
+          20%
+          {
+                    transform: translateY(-20px)
+          }
+}
